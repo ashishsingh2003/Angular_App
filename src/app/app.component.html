@@ -8,6 +8,9 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div>
-  <h1>Hello, From Bridgelabz </h1>
+  <h1>Hello {{this.userName}}, From Bridgelabz </h1>
   <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuy4k1Dyy4HeB5W8q_0ul3Cgcu0d2OVNvjbQ&s" (click)="onClick($event)" alt="Bridgelabz image" >
+</div>
+<div class="div2">
+  <input [(ngModel)]="userName"type="text">
 </div>
