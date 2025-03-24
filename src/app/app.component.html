@@ -12,5 +12,9 @@
   <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuy4k1Dyy4HeB5W8q_0ul3Cgcu0d2OVNvjbQ&s" (click)="onClick($event)" alt="Bridgelabz image" >
 </div>
 <div class="div2">
-  <input [(ngModel)]="userName"type="text">
+  <!-- Corrected input binding and added two-way binding -->
+  <input type="text" [(ngModel)]="userName" (input)="onInput()" placeholder="Enter your name">
+  
+  <!-- Display error message dynamically -->
+  <span class="error-output" *ngIf="nameError">{{ nameError }}</span>
 </div>
