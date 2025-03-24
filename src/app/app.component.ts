@@ -9,4 +9,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Angular_App';
+  imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuy4k1Dyy4HeB5W8q_0ul3Cgcu0d2OVNvjbQ&s";
 }
